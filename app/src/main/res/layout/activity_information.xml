@@ -19,7 +19,7 @@
 
 
 
-    <include layout="@layout/content_information" />
+
 
 
     <android.support.design.widget.NavigationView
@@ -43,6 +43,7 @@
 </android.support.v4.widget.DrawerLayout>
 
 -->
+    <include layout="@layout/content_information" />
     <include
         layout="@layout/app_bar_main_activity_user"
         android:layout_width="match_parent"
