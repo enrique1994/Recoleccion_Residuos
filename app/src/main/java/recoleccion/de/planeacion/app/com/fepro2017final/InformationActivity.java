@@ -25,10 +25,7 @@ public class InformationActivity extends AppCompatActivity implements OnNavigati
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        /*
 
-
-         */
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_information);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
