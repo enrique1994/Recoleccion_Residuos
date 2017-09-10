@@ -207,4 +207,6 @@
     <string name="title_activity_recycler">RecyclerActivity</string>
     <string name="title_activity_event">EventActivity</string>
     <string name="title_activity_login2">LoginActivity2</string>
+    <string name="title_activity_main__recolector">MainActivity_Recolector</string>
+    <string name="title_activity_main__administrador">MainActivity_Administrador</string>
 </resources>

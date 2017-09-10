@@ -70,6 +70,14 @@
         <activity
             android:name=".LoginActivity2"
             android:label="@string/title_activity_login2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivity_Recolector"
+            android:label="@string/title_activity_main__recolector"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivity_Administrador"
+            android:label="@string/title_activity_main__administrador"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
