@@ -66,6 +66,10 @@
         <activity
             android:name=".EventActivity"
             android:label="@string/title_activity_event"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LoginActivity2"
+            android:label="@string/title_activity_login2"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

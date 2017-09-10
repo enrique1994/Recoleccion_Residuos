@@ -206,4 +206,5 @@
     </string>
     <string name="title_activity_recycler">RecyclerActivity</string>
     <string name="title_activity_event">EventActivity</string>
+    <string name="title_activity_login2">LoginActivity2</string>
 </resources>

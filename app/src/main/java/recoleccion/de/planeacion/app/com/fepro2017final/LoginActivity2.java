@@ -1,5 +1,18 @@
 package recoleccion.de.planeacion.app.com.fepro2017final;
 
+import android.content.Intent;
+import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.NavigationView;
+import android.support.design.widget.Snackbar;
+import android.support.v4.view.GravityCompat;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -25,12 +38,12 @@ import android.view.MenuItem;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 
-public class RecyclerActivity extends AppCompatActivity implements OnNavigationItemSelectedListener {
+public class LoginActivity2 extends AppCompatActivity implements OnNavigationItemSelectedListener{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_recycler);
+        setContentView(R.layout.activity_login2);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -92,33 +105,33 @@ public class RecyclerActivity extends AppCompatActivity implements OnNavigationI
         int id = item.getItemId();
         if (id == R.id.home) {
             // Handle the camera action
-            Intent i = new Intent(RecyclerActivity.this, MainActivityUser.class);
+            Intent i = new Intent(LoginActivity2.this, MainActivityUser.class);
             startActivity(i);
         }
         else if (id == R.id.nav_camera) {
 
             // Handle the camera action
-            Intent i = new Intent(RecyclerActivity.this, RouteActivity.class);
+            Intent i = new Intent(LoginActivity2.this, RouteActivity.class);
             startActivity(i);
         } else if (id == R.id.nav_gallery) {
-            Intent i = new Intent(RecyclerActivity.this, InformationActivity.class);
+            Intent i = new Intent(LoginActivity2.this, InformationActivity.class);
 
             startActivity(i);
         } else if (id == R.id.nav_slideshow) {
-            Intent i = new Intent(RecyclerActivity.this, EventActivity.class);
+            Intent i = new Intent(LoginActivity2.this, EventActivity.class);
 
             startActivity(i);
         } else if (id == R.id.nav_manage) {
 
-            Intent i = new Intent(RecyclerActivity.this, RecyclerActivity.class);
+            Intent i = new Intent(LoginActivity2.this, RecyclerActivity.class);
 
             startActivity(i);
         } else if (id == R.id.nav_share) {
-            Intent i = new Intent(RecyclerActivity.this, LoginActivity2.class);
+            Intent i = new Intent(LoginActivity2.this, LoginActivity2.class);
 
             startActivity(i);
         } else if (id == R.id.nav_send) {
-            Intent i = new Intent(RecyclerActivity.this, SugerenciasQuejas.class);
+            Intent i = new Intent(LoginActivity2.this, SugerenciasQuejas.class);
             startActivity(i);
         }
 
@@ -126,6 +139,7 @@ public class RecyclerActivity extends AppCompatActivity implements OnNavigationI
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
 
 
 }
