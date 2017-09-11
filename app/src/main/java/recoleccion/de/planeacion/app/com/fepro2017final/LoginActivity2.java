@@ -131,7 +131,7 @@ public class LoginActivity2 extends AppCompatActivity implements OnNavigationIte
 
             startActivity(i);
         } else if (id == R.id.nav_send) {
-            Intent i = new Intent(LoginActivity2.this, SugerenciasQuejas.class);
+            Intent i = new Intent(LoginActivity2.this, QuejasActivity.class);
             startActivity(i);
         }
 

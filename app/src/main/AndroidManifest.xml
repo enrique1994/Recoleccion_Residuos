@@ -7,7 +7,7 @@
          Google Maps Android API v2, but you must specify either coarse or fine
          location permissions for the 'MyLocation' functionality. 
     -->
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <!-- To auto-complete the email text field in the login form with the user's emails -->
@@ -54,9 +54,6 @@
             android:name=".Quejas_Sugerencias"
             android:label="Quejas y sugerencias" />
         <activity
-            android:name=".SugerenciasQuejas"
-            android:label="@string/title_activity_sugerencias_quejas" />
-        <activity
             android:name=".InformationActivity"
             android:label="@string/title_activity_information"
             android:theme="@style/AppTheme.NoActionBar" />
@@ -79,7 +76,10 @@
         <activity
             android:name=".MainActivity_Administrador"
             android:label="@string/title_activity_main__administrador"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-    </application>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".QuejasActivity"
+            android:label="@string/title_activity_sugerencias_quejas"
+            android:theme="@style/AppTheme.NoActionBar" />    </application>
 
 </manifest>

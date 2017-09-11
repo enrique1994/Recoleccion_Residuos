@@ -109,11 +109,11 @@ public class MainActivityUser extends AppCompatActivity
 
             startActivity(i);
         } else if (id == R.id.nav_share) {
-            Intent i = new Intent(MainActivityUser.this, LoginActivity.class);
+            Intent i = new Intent(MainActivityUser.this, LoginActivity2.class);
 
             startActivity(i);
         } else if (id == R.id.nav_send) {
-            Intent i = new Intent(MainActivityUser.this, SugerenciasQuejas.class);
+            Intent i = new Intent(MainActivityUser.this, QuejasActivity.class);
             startActivity(i);
         }
 

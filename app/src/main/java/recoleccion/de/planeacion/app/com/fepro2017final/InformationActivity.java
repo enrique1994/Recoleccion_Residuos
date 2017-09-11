@@ -112,11 +112,10 @@ public class InformationActivity extends AppCompatActivity implements OnNavigati
 
             startActivity(i);
         } else if (id == R.id.nav_share) {
-            Intent i = new Intent(InformationActivity.this, LoginActivity.class);
+            Intent i = new Intent(InformationActivity.this, LoginActivity2.class);
 
             startActivity(i);
-        } else if (id == R.id.nav_send) {
-            Intent i = new Intent(InformationActivity.this, SugerenciasQuejas.class);
+        } else if (id == R.id.nav_send) {            Intent i = new Intent(InformationActivity.this, QuejasActivity.class);
             startActivity(i);
         }
 

@@ -32,7 +32,9 @@ public class RecyclerActivity extends AppCompatActivity implements OnNavigationI
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recycler);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+
+
+
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {

@@ -114,11 +114,11 @@ public class EventActivity extends AppCompatActivity implements OnNavigationItem
 
             startActivity(i);
         } else if (id == R.id.nav_share) {
-            Intent i = new Intent(EventActivity.this, LoginActivity.class);
+            Intent i = new Intent(EventActivity.this, LoginActivity2.class);
 
             startActivity(i);
         } else if (id == R.id.nav_send) {
-            Intent i = new Intent(EventActivity.this, SugerenciasQuejas.class);
+            Intent i = new Intent(EventActivity.this, QuejasActivity.class);
             startActivity(i);
         }
 

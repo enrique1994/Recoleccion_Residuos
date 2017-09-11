@@ -13,19 +13,37 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.view.View;
+import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.view.View;
+import android.support.design.widget.NavigationView.OnNavigationItemSelectedListener;
+import android.support.v7.widget.Toolbar;
+import android.app.Activity;
+import android.content.Intent;
+import android.support.design.widget.NavigationView;
+import android.support.v4.view.GravityCompat;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBarDrawerToggle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 
-
-
-
-public class Quejas_Sugerencias extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+public class QuejasActivity extends AppCompatActivity implements OnNavigationItemSelectedListener{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.content_quesug);
+        setContentView(R.layout.activity_quejas);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -37,7 +55,6 @@ public class Quejas_Sugerencias extends AppCompatActivity
                         .setAction("Action", null).show();
             }
         });
-
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -81,27 +98,40 @@ public class Quejas_Sugerencias extends AppCompatActivity
     }
 
     @SuppressWarnings("StatementWithEmptyBody")
+
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
-
-        if (id == R.id.nav_camera) {
+        if (id == R.id.home) {
             // Handle the camera action
-            Intent i = new Intent(Quejas_Sugerencias.this, RouteActivity.class);
+            Intent i = new Intent(QuejasActivity.this, MainActivityUser.class);
+            startActivity(i);
+        }
+        else if (id == R.id.nav_camera) {
+
+            // Handle the camera action
+            Intent i = new Intent(QuejasActivity.this, RouteActivity.class);
             startActivity(i);
         } else if (id == R.id.nav_gallery) {
+            Intent i = new Intent(QuejasActivity.this, InformationActivity.class);
 
+            startActivity(i);
         } else if (id == R.id.nav_slideshow) {
+            Intent i = new Intent(QuejasActivity.this, EventActivity.class);
 
+            startActivity(i);
         } else if (id == R.id.nav_manage) {
 
+            Intent i = new Intent(QuejasActivity.this, RecyclerActivity.class);
+
+            startActivity(i);
         } else if (id == R.id.nav_share) {
-            Intent i = new Intent(Quejas_Sugerencias.this, LoginActivity.class);
+            Intent i = new Intent(QuejasActivity.this, LoginActivity2.class);
 
             startActivity(i);
         } else if (id == R.id.nav_send) {
-            Intent i = new Intent(Quejas_Sugerencias.this, Quejas_Sugerencias.class);
+            Intent i = new Intent(QuejasActivity.this, QuejasActivity.class);
             startActivity(i);
         }
 
@@ -109,4 +139,7 @@ public class Quejas_Sugerencias extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+
+
 }
