@@ -199,7 +199,7 @@ public class LoginActivity extends AppCompatActivity implements OnNavigationItem
 
             startActivity(i);
         } else if (id == R.id.nav_send) {
-            Intent i = new Intent(LoginActivity.this, SugerenciasQuejas.class);
+            Intent i = new Intent(LoginActivity.this, QuejasActivity.class);
             startActivity(i);
         }
 

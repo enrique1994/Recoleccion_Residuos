@@ -120,7 +120,7 @@ public class RecyclerActivity extends AppCompatActivity implements OnNavigationI
 
             startActivity(i);
         } else if (id == R.id.nav_send) {
-            Intent i = new Intent(RecyclerActivity.this, SugerenciasQuejas.class);
+            Intent i = new Intent(RecyclerActivity.this, QuejasActivity.class);
             startActivity(i);
         }
 
